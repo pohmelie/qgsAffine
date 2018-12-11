@@ -28,8 +28,7 @@ experimental=False
 deprecated=False
 tags=
 homepage=http://plugins.qgis.org/plugins/qgsAffine
-repository=https://github.com/pohmelie/qgsAffine
-tracker=
+repository=https://github.com/gingerik/qgsAffine
+tracker=https://github.com/gingerik/qgsAffine/issues
 icon=icon.svg
 category=Vector
-
