@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ui</class>
- <widget class="QDialog" name="ui">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>471</width>
-    <height>235</height>
+    <width>500</width>
+    <height>258</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Vector Affine Transformation</string>
+   <string>Dialog</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="7" column="1">
-    <widget class="QPushButton" name="pushButtonInvert">
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelLayer">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -23,11 +23,34 @@
       </sizepolicy>
      </property>
      <property name="text">
-      <string>Invert Matrix</string>
+      <string>Layer:</string>
      </property>
     </widget>
    </item>
-   <item row="6" column="0" colspan="5">
+   <item row="0" column="1" colspan="3">
+    <widget class="QComboBox" name="comboBoxLayer"/>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="QRadioButton" name="radioButtonSelectedFeatures">
+     <property name="text">
+      <string>Selec&amp;ted features</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="4">
+    <widget class="QRadioButton" name="radioButtonWholeLayer">
+     <property name="text">
+      <string>Whole &amp;layer</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="4">
     <widget class="QGroupBox" name="groupBoxParameters">
      <property name="minimumSize">
       <size>
@@ -270,27 +293,7 @@
      </layout>
     </widget>
    </item>
-   <item row="4" column="0" colspan="4">
-    <widget class="QRadioButton" name="radioButtonSelectedFeatures">
-     <property name="text">
-      <string>Selected features</string>
-     </property>
-     <property name="checked">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0" colspan="4">
-    <widget class="QRadioButton" name="radioButtonWholeLayer">
-     <property name="text">
-      <string>Whole layer</string>
-     </property>
-     <property name="checked">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="0">
+   <item row="4" column="0">
     <widget class="QPushButton" name="pushButtonRun">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -303,8 +306,8 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="labelLayer">
+   <item row="4" column="1">
+    <widget class="QPushButton" name="pushButtonInvert">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -312,24 +315,24 @@
       </sizepolicy>
      </property>
      <property name="text">
-      <string>Layer:</string>
+      <string>Invert Matrix</string>
      </property>
     </widget>
    </item>
-   <item row="7" column="2">
+   <item row="4" column="2">
     <spacer name="horizontalSpacer">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>40</width>
+       <width>205</width>
        <height>20</height>
       </size>
      </property>
     </spacer>
    </item>
-   <item row="7" column="3" colspan="2">
+   <item row="4" column="3">
     <widget class="QPushButton" name="pushButtonClose">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -342,25 +345,8 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="1" colspan="4">
-    <widget class="QComboBox" name="comboBoxLayer"/>
-   </item>
   </layout>
  </widget>
- <tabstops>
-  <tabstop>comboBoxLayer</tabstop>
-  <tabstop>radioButtonSelectedFeatures</tabstop>
-  <tabstop>radioButtonWholeLayer</tabstop>
-  <tabstop>spinA</tabstop>
-  <tabstop>spinB</tabstop>
-  <tabstop>spinC</tabstop>
-  <tabstop>spinD</tabstop>
-  <tabstop>spinTx</tabstop>
-  <tabstop>spinTy</tabstop>
-  <tabstop>pushButtonRun</tabstop>
-  <tabstop>pushButtonInvert</tabstop>
-  <tabstop>pushButtonClose</tabstop>
- </tabstops>
  <resources/>
  <connections/>
 </ui>
