@@ -11,7 +11,7 @@ from qgis.gui import QgsMessageViewer
 class UIValue:
 
     def __set_name__(self, owner, name):
-        self.name = f"spin{name.capitalize()}"
+        self.name = "spin{}".format(name.capitalize())
 
     def __get__(self, instance, owner):
         return getattr(instance.ui, self.name).value()
