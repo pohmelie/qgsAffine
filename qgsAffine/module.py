@@ -10,7 +10,7 @@ from qgis.gui import QgsMessageViewer
 
 class UIValue:
 
-    def __set_name__(self, owner, name):
+    def __init__(self, name):
         self.name = "spin{}".format(name.capitalize())
 
     def __get__(self, instance, owner):
@@ -22,12 +22,12 @@ class UIValue:
 
 class Affine:
 
-    a = UIValue()
-    b = UIValue()
-    tx = UIValue()
-    c = UIValue()
-    d = UIValue()
-    ty = UIValue()
+    a = UIValue("a")
+    b = UIValue("b")
+    tx = UIValue("tx")
+    c = UIValue("c")
+    d = UIValue("d")
+    ty = UIValue("ty")
 
     def __init__(self, ui):
         self.ui = ui
