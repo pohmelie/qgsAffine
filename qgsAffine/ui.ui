@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>500</width>
+    <width>450</width>
     <height>258</height>
    </rect>
   </property>
@@ -27,10 +27,10 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="1" colspan="3">
+   <item row="0" column="1">
     <widget class="QComboBox" name="comboBoxLayer"/>
    </item>
-   <item row="1" column="0" colspan="4">
+   <item row="1" column="0" colspan="2">
     <widget class="QRadioButton" name="radioButtonSelectedFeatures">
      <property name="text">
       <string>Selec&amp;ted features</string>
@@ -40,7 +40,7 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="0" colspan="4">
+   <item row="2" column="0" colspan="2">
     <widget class="QRadioButton" name="radioButtonWholeLayer">
      <property name="text">
       <string>Whole &amp;layer</string>
@@ -50,7 +50,7 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="0" colspan="4">
+   <item row="3" column="0" colspan="5">
     <widget class="QGroupBox" name="groupBoxParameters">
      <property name="minimumSize">
       <size>
@@ -320,6 +320,13 @@
     </widget>
    </item>
    <item row="4" column="2">
+    <widget class="QCheckBox" name="checkBoxZoomToLayer">
+     <property name="text">
+      <string>Zoom to layer</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
     <spacer name="horizontalSpacer">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -332,7 +339,7 @@
      </property>
     </spacer>
    </item>
-   <item row="4" column="3">
+   <item row="4" column="4">
     <widget class="QPushButton" name="pushButtonClose">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">

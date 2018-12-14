@@ -103,7 +103,8 @@ class AffineUI:
                 newx = v.a * vertex.x() + v.b * vertex.y() + v.tx
                 newy = v.c * vertex.x() + v.d * vertex.y() + v.ty
                 vlayer.moveVertex(newx, newy, fid, i)
-        self.iface.mapCanvas().zoomToSelected()
+        if self.ui.checkBoxZoomToLayer.isChecked():
+            self.iface.mapCanvas().zoomToSelected()
 
     def invert(self):
         # matrix form: x' = A x + b
