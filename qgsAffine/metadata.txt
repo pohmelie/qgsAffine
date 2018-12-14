@@ -2,12 +2,15 @@
 name=Affine Transformations
 qgisMinimumVersion=3.4
 description=Apply affine transformations to selected geometries.
-version=2.0.1
+version=2.0.2
 
 author=Mauricio de Paulo, Erik Timmers and Nikita Melentev
 email=e.timmers@gmail.com
 
-changelog=Version 2.0.1
+changelog=Version 2.0.2
+    * fix python < 3.6 compatibility
+
+    Version 2.0.1
     * python 3.5 compatibility
     * optional "zoom to layer"
 
