@@ -1,9 +1,9 @@
 import pathlib
 import itertools
 
-from PyQt5 import uic
-from PyQt5.QtWidgets import QAction
-from PyQt5.QtGui import QIcon
+from qgis.PyQt import uic
+from qgis.PyQt.QtGui import QIcon
+from qgis.PyQt.QtWidgets import QAction
 from qgis.core import QgsProject, QgsWkbTypes, QgsPoint
 from qgis.gui import QgsMessageViewer
 
